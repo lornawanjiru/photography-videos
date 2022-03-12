@@ -2,7 +2,12 @@ body{
     color: #eee;
 	height: 100%;
 }
-
+.show-desk{
+    display: none;
+}
+.hide-desk{
+    display: inline;
+}
 .navbar {
     padding: 2%;
     background: transparent;
@@ -104,64 +109,23 @@ body{
 .portfolio{
 	padding: 5%;
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/portfolio.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
 }
-.gallery-title
-{
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
-.filter-button
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #42B32F;
-    margin-bottom: 30px;
-
-}
-.filter-button:hover
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #42B32F;
-
-}
-.btn-default:active .filter-button:active
-{
-    background-color: #42B32F;
-    color: white;
-}
-
-.port-image
-{
-    width: 100%;
-}
-
-.gallery_product
-{
-    margin-bottom: 30px;
+.portfolio img{
+    height: 60vh;
+    padding: 2%;
+    width: 80%;
 }
 @media only screen and (min-width: 640px){
-  
+  .hide-desk{
+      display: none;
+  }  
+  .show-desk{
+      display: inline;
+  }
 }
